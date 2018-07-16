@@ -1,0 +1,204 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background-image: url('../images/background.png');
+}
+
+h1{
+    margin: 0;
+    padding: 0.75rem;
+}
+
+header{
+    padding: 0.25rem 0 0 1rem;
+    border-bottom: 1px solid #EEEBEB;
+    background-color: #FFFFFF;
+}
+
+main{
+    position: relative;
+    margin: 2rem auto;
+    border: 1px solid #EEEBEB;
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 70%;
+}
+
+.hide{
+    display: none !important;
+}
+
+.main-header{
+    position: relative;
+    background-image: url('../images/header-background.svg');
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    border-bottom: 1px solid #EEEBEB;
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+#initial-greeting, #new-user-greeting{
+    padding: 1rem;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+#number-pad{
+    display: flex;
+    flex-flow: row wrap;
+    height: 50vh;
+}
+
+.number{
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex: 1 0 33.3333%;
+}
+
+#new-user-form{
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+#new-user-form > .input, #new-user-form > input{
+    margin: 1.75rem;
+}
+
+input[type='text'], input[type='email']{
+    padding: 1rem;
+    border: 1px solid black;
+    width: 40%;
+    font-size: 1.25rem;
+}
+
+.new-user-buttons{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.new-user-buttons > div{
+    margin: 1rem;
+}
+
+.red-button{
+    background-color: #E36464;
+    color: white;
+}
+
+.green-button{
+    background-color: #30D6B6;
+    color: white;
+}
+
+.gray-button{
+    background-color: #EEEBEB;
+}
+
+.large-button{
+    padding: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.small-button{
+    padding: 1rem;
+    display: inline-block;
+}
+
+input[type='submit']{
+    border-radius: 0;
+    font-size: 1.75rem;
+    display: block;
+}
+
+.button:hover, .button:active{
+    cursor: pointer;
+    background-color: #1B8FB3;
+    color: white;
+    transition: background-color .25s ease-in-out; 
+}
+
+.messaging{
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+#api-display{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#phone-number-display{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.fa-check{
+    margin-left: 0.25rem;
+}
+
+#logo{
+    width: 164px;
+    height: 53px;
+}
+
+#loader-container{
+    position: absolute;
+    background-color: rgba(170, 168, 168, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.loader,
+.loader:before,
+.loader:after{
+  background: #1B8FB3;
+  animation: load 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+
+.loader{
+  color: #1B8FB3;
+  text-indent: -9999em;
+  margin: 30% auto;
+  position: relative;
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after{
+  position: absolute;
+  top: 0;
+  content: '';
+}
+
+.loader:before{
+  left: -1.5em;
+  animation-delay: -0.32s;
+}
+
+.loader:after{
+  left: 1.5em;
+}
+
+@keyframes load{
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}

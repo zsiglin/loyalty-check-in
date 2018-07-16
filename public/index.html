@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Baker: Loyalty Check-In</title>
+
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossorigin='anonymous'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet'>
+    <link rel='stylesheet' type='text/css' href='css/index.css'/>
+</head>
+<body>
+    <header>
+        <img id='logo' src='images/baker-logo.png'/>
+    </header>
+
+    <main>
+        <div id='loader-container' class='hide'>
+            <div class='loader'>Loading...</div>
+        </div>
+
+        <div class='main-header'>
+            <h1>Loyalty Check-in</h1>
+        </div>
+
+        <div class='messaging'>
+            <div id='api-display' class='hide'></div>
+    
+            <div id='phone-number-display' class='hide'></div>  
+
+            <div id='new-user-greeting' class='hide'>
+                It looks like you're new here. Let's get you signed up!
+            </div>
+
+            <div id='initial-greeting'>
+                Welcome! Please enter your phone number to check-in and earn points.
+            </div>
+        </div>
+
+        <form id='new-user-form' class='hide'>
+            <div id='new-user-phone-number'></div>
+
+            <div class='input'>
+                <input name='firstName' placeholder='First Name' type='text' required/>
+            </div>
+            
+            <div class='input'>
+                <input name='lastName' placeholder='Last Name' type='text' required/>
+            </div>
+
+            <div class='input'>
+                <input name='emailAddress' placeholder='Email Address' type='email' required/>
+            </div>
+
+            <div class='new-user-buttons'>    
+                <input type='submit' value='Start collecting points' id='new-user-register' class='button green-button large-button'>
+  
+                <div id='reset-new-user-registration' class='button red-button small-button'>
+                    I changed my mind
+                </div>
+            </div>
+        </form>
+        
+        <div id='number-pad'>
+            <div class='number button'>1</div>
+
+            <div class='number button'>2</div>
+
+            <div class='number button'>3</div>
+
+            <div class='number button'>4</div>
+
+            <div class='number button'>5</div>
+
+            <div class='number button'>6</div>
+
+            <div class='number button'>7</div>
+
+            <div class='number button'>8</div>
+
+            <div class='number button'>9</div>
+
+            <div class='number button red-button backspace'>
+                <i class='fa fa-chevron-left' aria-hidden='true'></i>
+            </div>
+
+            <div class='number button'>0</div>
+            
+            <div class='number button green-button check-in'>
+                Check-in
+                <i class='fa fa-check' aria-hidden='true'></i>
+            </div>
+        </div>
+    </main>
+
+    <script src='js/app.js'></script>
+</body>
+</html>

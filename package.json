@@ -1,0 +1,29 @@
+{
+  "name": "loyalty-check-in",
+  "version": "0.0.1",
+  "description": "A basic loyalty check-in application that accepts a phone number and distributes points.",
+  "main": "app.js",
+  "private": true,
+  "dependencies": {
+    "knex": "^0.14.2",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "koa-serve-static": "^1.0.0",
+    "mailgun-js": "^0.13.1",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "engines": {
+    "node": ">=8.9.1"
+  }
+}
